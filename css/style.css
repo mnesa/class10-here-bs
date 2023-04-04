@@ -1,0 +1,94 @@
+:root{
+  --main-text:rgb(0 174 170);
+}
+/* utility class */
+.main-text{
+  color:rgb(0 174 170);
+}
+.second-text{
+  color: #1b222c!important;
+}
+.main-bg{
+ background-color:rgb(0 174 170) ;
+}
+.second-bg{
+background-color: #1b222c;
+}
+.main-btn{
+  background-color: var(--main-text);
+  font-weight: 500;
+  border-radius: 25px;
+  font-size: 1.2rem;
+  padding: 5px 15px;
+}
+.main-btn:hover{
+  background-color: rgba(0, 174, 171, 0.39);
+  border: 1px solid rgb(0 174 170);
+}
+/* navbar */
+.navbar-nav li:last-child{
+  background-color: var(--main-text);
+  border: 2px solid var(--main-text);
+}
+.navbar-nav li:last-child:hover{
+  background-color: transparent;
+}
+
+/* showcase */
+.showcase{
+  background: url(../images/showcasse.jpg) no-repeat center center/cover;
+}
+/* brand */
+.brand{
+  background-color: #dfdfdf;
+}
+.about,
+.about .card-body{
+  background-color: #eeeeee;
+}
+.services .card-body i{
+  background-color: #1b222c;
+  color: #dfdfdf;
+  border-radius: 100%;
+  padding: 10px;
+  font-size: 20px;
+}
+.form-section,
+.company,
+.company .card-body{
+  background-color: #1b222c;
+  color: #dfdfdf;
+}
+.footer,
+.footer .card-body{
+  background-color: #3f454d;
+}
+.footer a{
+  text-decoration: none;
+  color: #eeeeee;
+}
+.footer a:hover{
+  color: var(--main-text);
+}
+.footer{
+  position: relative;
+}
+.footer i{
+  display: inline-block;
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+  padding: 12px;
+  font-size: 1.5rem;
+  border-radius: 25%;
+  border: 2px solid #28a745;
+  z-index: 10;
+}
+
+
+@media screen and (max-width:768px) {
+  .reversi{
+    display: flex;
+    flex-direction: column-reverse;
+   }
+}
